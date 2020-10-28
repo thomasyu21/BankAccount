@@ -18,4 +18,9 @@ public class BankAccount{
     return ("Account ID is " + accountID);
   }
 
+  public void setPassword(String s) {
+    password = s;
+    //System.out.println("New password is " + s); //Testing purposes
+  }
+
 }

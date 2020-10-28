@@ -4,5 +4,6 @@ public class BankAccountTester{
     BankAccount A1 = new BankAccount(1001,"password1");
     System.out.println(A1.getBalance());
     System.out.println(A1.getAccountID());
+    A1.setPassword("password2");
   }
 }

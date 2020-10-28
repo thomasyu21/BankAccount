@@ -14,6 +14,8 @@ public class BankAccountTester{
     withdrawTest(A1.withdraw(0.), A1.getBalance()); //fail, 1000.0
     withdrawTest(A1.withdraw(1000.), A1.getBalance()); //success, 0.0
 
+    System.out.println(A1.toString(A1.getAccountID(), A1.getBalance()));
+
   }
 
     //For Deposit Testing

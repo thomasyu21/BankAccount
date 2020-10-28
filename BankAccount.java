@@ -10,17 +10,26 @@ public class BankAccount{
     password = p;
   }
 
-  public String getBalance() {
-    return ("Balance is " + balance);
+  public double getBalance() {
+    return balance;
   }
 
-  public String getAccountID() {
-    return ("Account ID is " + accountID);
+  public int getAccountID() {
+    return accountID;
   }
 
   public void setPassword(String s) {
     password = s;
     //System.out.println("New password is " + s); //Testing purposes
+  }
+
+  public boolean deposit(double amount) {
+    if (amount > 0.0) {
+      balance+=amount;
+      return true;
+    }else{
+      return false;
+    }
   }
 
 }

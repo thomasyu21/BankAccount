@@ -14,4 +14,8 @@ public class BankAccount{
     return ("Balance is " + balance);
   }
 
+  public String getAccountID() {
+    return ("Account ID is " + accountID);
+  }
+
 }

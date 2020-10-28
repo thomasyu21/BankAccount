@@ -18,14 +18,23 @@ public class BankAccount{
     return accountID;
   }
 
-  public void setPassword(String s) {
-    password = s;
+  public void setPassword(String newPass) {
+    password = newPass;
     //System.out.println("New password is " + s); //Testing purposes
   }
 
   public boolean deposit(double amount) {
     if (amount > 0.0) {
       balance+=amount;
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  public boolean withdraw(double amount) {
+    if (amount > 0.0 && amount <= balance) {
+      balance-=amount;
       return true;
     }else{
       return false;
